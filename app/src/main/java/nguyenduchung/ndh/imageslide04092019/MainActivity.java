@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mbtnSlide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                v.setVisibility(View.GONE);
                 final CountDownTimer countDownTimer=new CountDownTimer(1000,1000) {
                     @Override
                     public void onTick(long l) {
